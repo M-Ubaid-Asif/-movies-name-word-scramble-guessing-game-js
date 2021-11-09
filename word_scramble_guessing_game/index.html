@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>word Scramble</title>
+    <link href="https://fonts.googleapis.com/css2?family=Carter+One&family=Source+Code+Pro:ital,wght@1,300&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        html{
+            font-size: 62.5%;
+        }
+        header{
+            width: 100%;
+            line-height: 10vh;
+            background-color: cadetblue;
+        }
+        h1{
+            font-family: 'Carter One', cursive;
+            text-align: center;
+            font-size: 3rem;
+            text-transform: uppercase;
+            letter-spacing: 15px;
+            text-shadow: 0 1px 0 #efefef,0 2px 0 #efefef,0 3px 0 #efefef,0 4px 0 #efefef,0 30px 5px rgba(0,0,0,.1);
+        }
+        section{
+            height: 90vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #4b4b4b;
+        }
+        .game{
+            font-family: 'Source Code Pro', sans-serif;
+            background-color: #5c5c5c;
+            width: 50%;
+            height: 420px;
+            padding: 20px 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0px 7px 3px -2px black;
+        }
+        h3{
+            text-align: center;
+            font-size: 2.5rem;
+        }
+        .game input{
+            width: 60%;
+            padding: 10px 0;
+            text-align: center;
+            border-radius: 2.5rem;
+            outline: none;
+            border: none;
+            background-color: #dff9fb;
+            margin: 2rem 0;
+            font-size: 1.8rem;
+        }
+        button{
+            /* width: 40%; */
+            font-size: 1.6rem;
+            cursor: pointer;
+            outline: none;
+            border: #2f3542;
+            margin-top: 1rem;
+            color: #eb4d4b;
+            padding: 4px;
+            /* border-radius: 20px; */
+        }
+        button.btn{
+            font-weight: 600;
+            padding: 1.5rem 1rem;
+            background-color: white;
+            text-transform: uppercase;
+            transition-property:all;
+            transition-duration: 0.5s;
+            transition-timing-function: cubic-bezier(0.65, -0.25, 0.25, 1.95);
+        }
+        button.btn:hover, button.btn:focus, button.btn:active{
+            letter-spacing: 0.125rem;
+            word-spacing: 0.15rem;
+            background-color:aquamarine;
+        }
+        h3{
+            color: white;
+        }
+        .hidden{
+            display: none;
+        }
+        .msg{
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>guess the movie name game</h1>
+    </header>
+    <section>
+        <div class="game">
+            <h2 class="msg"></h2>
+            <h3 for='username' class="namelabel">Name:</h3>
+            <input type="text" name="" class="username" id="username" placeholder="Enter your name">
+            <input type="text" class="hidden">
+            <button class="btn">Click here to start</button>
+        </div>
+    </section>
+
+
+
+    <script src="./script.js"></script>
+</body>
+</html>
